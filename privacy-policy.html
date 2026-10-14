@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité / Privacy Policy – CardForgeGames</title>
+<meta name="description" content="Politique de confidentialité des jeux CardForgeGames / Privacy policy of CardForgeGames games.">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root {
+    --felt: #05542E;
+    --felt-deep: #033A20;
+    --paper: #F6F1E1;
+    --ink: #0B3B22;
+    --text: #F1EDDC;
+    --muted: #B9D3C2;
+    --gold: #E6C36A;
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background-color: var(--felt);
+    background-image:
+      radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.07), transparent 60%),
+      radial-gradient(ellipse at 50% 100%, var(--felt-deep), transparent 70%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  .wrap {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  /* ---- En-tête ---- */
+  header { margin-bottom: 2rem; }
+
+  .suits {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    color: var(--gold);
+    margin: 0 0 .75rem;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(2rem, 7vw, 3rem);
+    line-height: 1.1;
+    margin: 0 0 .5rem;
+    letter-spacing: -.01em;
+  }
+
+  .studio {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .lang-switch {
+    display: none;
+    margin-top: 1.5rem;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .js .lang-switch { display: inline-flex; }
+
+  .lang-switch button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--gold);
+    font: inherit;
+    font-size: .95rem;
+    padding: .45rem 1.1rem;
+    min-height: 2.75rem;
+    cursor: pointer;
+  }
+  .lang-switch button[aria-pressed="true"] {
+    background: var(--gold);
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .lang-switch button:focus-visible,
+  a:focus-visible {
+    outline: 3px solid var(--paper);
+    outline-offset: 2px;
+  }
+
+  /* ---- Langues ---- */
+  .js [data-lang]:not(.active) { display: none; }
+  html:not(.js) [data-lang] + [data-lang] {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(230,195,106,.4);
+  }
+
+  /* ---- Carte "En bref" ---- */
+  .card {
+    position: relative;
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 14px;
+    padding: 1.5rem 1.5rem 1.5rem 3.25rem;
+    margin: 0 0 2.5rem;
+    box-shadow: 0 10px 28px rgba(0,0,0,.35);
+  }
+  .card::before,
+  .card::after {
+    content: "\2660";
+    position: absolute;
+    left: 1rem;
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  .card::before { top: 1rem; }
+  .card::after { bottom: 1rem; transform: rotate(180deg); }
+  .card h2 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    margin: 0 0 .5rem;
+    color: var(--ink);
+  }
+  .card p { margin: 0; }
+
+  /* ---- Texte ---- */
+  section h2 {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    line-height: 1.25;
+    margin: 2.25rem 0 .5rem;
+    color: var(--gold);
+  }
+  p { margin: 0 0 1rem; max-width: 40rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+  li { margin-bottom: .4rem; }
+
+  a { color: var(--gold); text-underline-offset: 3px; }
+  a:hover { color: var(--paper); }
+
+  .updated { color: var(--muted); font-size: .95rem; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(230,195,106,.4);
+    color: var(--muted);
+    font-size: .95rem;
+  }
+
+  @media (max-width: 30rem) {
+    body { font-size: 1rem; }
+    .card { padding-left: 2.75rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="suits" aria-hidden="true">&#9824; &#9829; &#9830; &#9827;</p>
+    <h1>CardForgeGames</h1>
+    <p class="studio">Studio indépendant de développement de jeux vidéo mobiles<span lang="en"> / Independent mobile game studio</span></p>
+
+    <div class="lang-switch" role="group" aria-label="Langue / Language">
+      <button type="button" data-set="fr" aria-pressed="true">Français</button>
+      <button type="button" data-set="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== FRANÇAIS ===================== -->
+    <article data-lang="fr" lang="fr" class="active">
+      <div class="card">
+        <h2>En bref</h2>
+        <p>Nous ne collectons aucune donnée personnelle sur nos propres serveurs. Nos jeux affichent des publicités via Google AdMob, qui peut traiter certaines données de votre appareil, avec votre consentement lorsque la loi l'exige.</p>
+      </div>
+
+      <section>
+        <h2>Politique de confidentialité</h2>
+        <p class="updated">Dernière mise à jour : 28 septembre 2026</p>
+        <p>Cette politique s'applique aux jeux mobiles édités par CardForgeGames, dont « Tarot Africain », disponibles sur Google Play.</p>
+      </section>
+
+      <section>
+        <h2>Données que nous collectons</h2>
+        <p>CardForgeGames ne collecte, ne stocke et ne transmet aucune donnée personnelle sur ses propres serveurs. Nos jeux ne demandent ni compte, ni nom, ni adresse e-mail.</p>
+        <p>Vos préférences (thème, difficulté, langue, etc.) et votre progression sont enregistrées uniquement sur votre appareil. Elles ne nous sont jamais envoyées et sont supprimées lorsque vous désinstallez le jeu ou effacez ses données.</p>
+      </section>
+
+      <section>
+        <h2>Publicité (Google AdMob)</h2>
+        <p>Nos jeux affichent des publicités (bannières et annonces interstitielles) fournies par Google AdMob. Pour afficher et mesurer ces publicités, personnaliser les annonces et prévenir la fraude, le SDK de Google peut collecter et traiter des données de votre appareil, notamment :</p>
+        <ul>
+          <li>votre adresse IP ;</li>
+          <li>des identifiants d'appareil, dont l'identifiant publicitaire Android ;</li>
+          <li>des informations techniques (modèle, système, diagnostics) ;</li>
+          <li>vos interactions avec les publicités.</li>
+        </ul>
+        <p>Ces données sont traitées par Google, qui agit sous sa propre responsabilité. Pour en savoir plus, consultez la <a href="https://policies.google.com/privacy" rel="noopener">politique de confidentialité de Google</a> et la page <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">« Comment Google utilise les informations provenant des sites ou applications qui utilisent ses services »</a>.</p>
+      </section>
+
+      <section>
+        <h2>Consentement et vos choix</h2>
+        <p>Dans l'Espace économique européen et au Royaume-Uni, un formulaire de consentement s'affiche au premier lancement afin que vous puissiez accepter ou refuser les publicités personnalisées. Vous pouvez à tout moment :</p>
+        <ul>
+          <li>modifier votre choix de consentement depuis les réglages du jeu, lorsque cette option est proposée ;</li>
+          <li>réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres Android (Paramètres &gt; Confidentialité &gt; Annonces) ;</li>
+          <li>désactiver la personnalisation des annonces dans ces mêmes paramètres.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Enfants</h2>
+        <p>Nos jeux ne s'adressent pas spécifiquement aux enfants de moins de 13 ans, et nous ne collectons pas sciemment de données auprès d'eux.</p>
+      </section>
+
+      <section>
+        <h2>Vos droits</h2>
+        <p>Comme nous ne conservons aucune donnée personnelle vous concernant, il n'y a rien à consulter ou à supprimer de notre côté. Pour les données traitées par Google dans le cadre de la publicité, vous pouvez exercer vos droits (accès, suppression, opposition) auprès de Google via son <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">espace « Données et confidentialité »</a>.</p>
+      </section>
+
+      <section>
+        <h2>Modifications de cette politique</h2>
+        <p>Nous pouvons mettre à jour cette politique, par exemple si un jeu ajoute une nouvelle fonctionnalité. La date de dernière mise à jour est indiquée en haut de cette page.</p>
+      </section>
+
+      <section>
+        <h2>Nous contacter</h2>
+        <p>Une question sur cette politique ? Écrivez-nous à <a href="mailto:support.cardforgestudio@gmail.com">support.cardforgestudio@gmail.com</a>.</p>
+      </section>
+    </article>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <article data-lang="en" lang="en">
+      <div class="card">
+        <h2>In short</h2>
+        <p>We do not collect any personal data on our own servers. Our games show ads through Google AdMob, which may process some data from your device, with your consent where the law requires it.</p>
+      </div>
+
+      <section>
+        <h2>Privacy Policy</h2>
+        <p class="updated">Last updated: September 28, 2026</p>
+        <p>This policy applies to the mobile games published by CardForgeGames, including "Tarot Africain", available on Google Play.</p>
+      </section>
+
+      <section>
+        <h2>Data we collect</h2>
+        <p>CardForgeGames does not collect, store or transmit any personal data on its own servers. Our games do not ask for an account, a name or an email address.</p>
+        <p>Your preferences (theme, difficulty, language, etc.) and your progress are saved only on your device. They are never sent to us and are deleted when you uninstall the game or clear its data.</p>
+      </section>
+
+      <section>
+        <h2>Advertising (Google AdMob)</h2>
+        <p>Our games display ads (banners and interstitial ads) provided by Google AdMob. To show and measure these ads, personalize them and prevent fraud, Google's SDK may collect and process data from your device, including:</p>
+        <ul>
+          <li>your IP address;</li>
+          <li>device identifiers, including the Android advertising ID;</li>
+          <li>technical information (device model, operating system, diagnostics);</li>
+          <li>your interactions with ads.</li>
+        </ul>
+        <p>This data is processed by Google, which acts under its own responsibility. To learn more, see <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">"How Google uses information from sites or apps that use our services"</a>.</p>
+      </section>
+
+      <section>
+        <h2>Consent and your choices</h2>
+        <p>In the European Economic Area and the United Kingdom, a consent form appears when you first launch the game so you can accept or refuse personalized ads. At any time, you can:</p>
+        <ul>
+          <li>change your consent choice from the game settings, when this option is offered;</li>
+          <li>reset or delete your advertising ID in Android settings (Settings &gt; Privacy &gt; Ads);</li>
+          <li>turn off ad personalization in those same settings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>Our games are not specifically directed at children under 13, and we do not knowingly collect data from them.</p>
+      </section>
+
+      <section>
+        <h2>Your rights</h2>
+        <p>Because we do not keep any personal data about you, there is nothing for us to access or delete. For data processed by Google for advertising, you can exercise your rights (access, deletion, objection) with Google through its <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Data &amp; privacy page</a>.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy, for example if a game adds a new feature. The date of the latest update is shown at the top of this page.</p>
+      </section>
+
+      <section>
+        <h2>Contact us</h2>
+        <p>Questions about this policy? Write to us at <a href="mailto:support.cardforgestudio@gmail.com">support.cardforgestudio@gmail.com</a>.</p>
+      </section>
+    </article>
+
+  </main>
+
+  <footer>&copy; 2026 CardForgeGames</footer>
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.lang-switch button');
+  var articles = document.querySelectorAll('[data-lang]');
+
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    articles.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('data-lang') === lang);
+    });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === lang));
+    });
+    document.title = lang === 'fr'
+      ? 'Politique de confidentialité – CardForgeGames'
+      : 'Privacy Policy – CardForgeGames';
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set')); });
+  });
+
+  var fromHash = location.hash.replace('#', '');
+  var initial = (fromHash === 'fr' || fromHash === 'en')
+    ? fromHash
+    : ((navigator.language || 'fr').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en');
+  setLang(initial);
+})();
+</script>
+</body>
+</html>
