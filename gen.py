@@ -4,6 +4,7 @@ import json,os,glob,datetime
 from urllib.parse import quote
 BASE="https://cardforgestudio.github.io"   # sans slash final ; sert aux canonical, hreflang et sitemap
 UTM_SOURCE="cardforgestudio-site"
+SITEMAP_HREFLANG=False   # True = ajoute les liens hreflang dans le sitemap (déjà présents dans le <head> des pages)
 ROOT=os.path.dirname(os.path.abspath(__file__))
 LANGS=["fr","en","de","es","it"]
 VERIF='<meta name="google-site-verification" content="8SDHUerU7Fc-hJMIeVGXjvIDedUCsISQvQDIxCLT-1o" />'
@@ -68,10 +69,10 @@ if BASE:
     urls=""
     for f in files:
         for l in LANGS:
-            alts="".join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{U(x,f)}"/>' for x in LANGS)+f'<xhtml:link rel="alternate" hreflang="x-default" href="{U("fr",f)}"/>'
+            alts=("".join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{U(x,f)}"/>' for x in LANGS)+f'<xhtml:link rel="alternate" hreflang="x-default" href="{U("fr",f)}"/>') if SITEMAP_HREFLANG else ""
             urls+=f"<url><loc>{U(l,f)}</loc><lastmod>{today}</lastmod>{alts}</url>\n"
     urls+=f"<url><loc>{BASE}/privacy-policy.html</loc><lastmod>{today}</lastmod></url>\n"
-    open(os.path.join(ROOT,"sitemap.xml"),"w",encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+urls+"</urlset>\n")
+    open(os.path.join(ROOT,"sitemap.xml"),"w",encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'+(' xmlns:xhtml="http://www.w3.org/1999/xhtml"' if SITEMAP_HREFLANG else "")+'>\n'+urls+"</urlset>\n")
     open(os.path.join(ROOT,"robots.txt"),"w",encoding="utf-8").write(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
 print("ok")
 if missing: print("ATTENTION, captures introuvables :",*sorted(set(missing)),sep="\n  ")
