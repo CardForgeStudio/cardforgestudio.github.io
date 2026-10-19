@@ -1,0 +1,202 @@
+{
+ "brand": "CardForgeStudio",
+ "email": "support.cardforgestudio@gmail.com",
+ "fan": [
+  "10_carreau",
+  "1_trefle",
+  "dame_pique",
+  "valet_coeur"
+ ],
+ "lang": {
+  "fr": {
+   "nav": [
+    "Jeux",
+    "Règles",
+    "Confidentialité"
+   ],
+   "h1": "Les grands classiques des jeux de cartes, réinventés pour le mobile.",
+   "lead": "CardForgeStudio est un studio indépendant qui donne une seconde vie aux jeux de cartes traditionnels : règles fidèles, interface soignée, parties lancées en un geste.",
+   "b_rules": "Apprendre les règles",
+   "sh": "Le studio",
+   "sc": [
+    [
+     "Spécialisé cartes",
+     "Tarot, jeux de plis, jeux d'annonces : nous nous concentrons sur les jeux de cartes classiques."
+    ],
+    [
+     "Pensé pour le tactile",
+     "Boutons larges, cartes lisibles sur tous les écrans, du smartphone à la tablette."
+    ],
+    [
+     "Vos règles, vos choix",
+     "Chaque jeu propose des variantes réglables pour jouer comme à la maison."
+    ],
+    [
+     "Un framework maison",
+     "Nos jeux reposent sur un framework de jeux de cartes développé sous Godot : de nouveaux titres arrivent."
+    ]
+   ],
+   "gh": "Nos jeux",
+   "soon": "D'autres jeux de cartes classiques arrivent bientôt.",
+   "bh": "Prêt pour une partie ?",
+   "badge": "Disponible sur Google Play",
+   "contact": "Contact",
+   "priv": "Politique de confidentialité",
+   "t_i": "CardForgeStudio – Jeux de cartes classiques sur Android",
+   "d_i": "CardForgeStudio, studio indépendant de jeux de cartes classiques sur mobile. Découvrez le Tarot Africain sur Google Play.",
+   "toc": "Sommaire"
+  },
+  "en": {
+   "nav": [
+    "Games",
+    "Rules",
+    "Privacy"
+   ],
+   "h1": "Classic card games, reinvented for mobile.",
+   "lead": "CardForgeStudio is an independent studio giving traditional card games a second life: faithful rules, a polished interface, and games that start in one tap.",
+   "b_rules": "Learn the rules",
+   "sh": "The studio",
+   "sc": [
+    [
+     "Card games only",
+     "Tarot, trick-taking and bidding games: we focus on classic card games."
+    ],
+    [
+     "Built for touch",
+     "Large buttons and readable cards on every screen, from phone to tablet."
+    ],
+    [
+     "Your rules, your choice",
+     "Every game offers adjustable variants so you can play like at home."
+    ],
+    [
+     "In-house framework",
+     "Our games run on a card game framework built with Godot: more titles are coming."
+    ]
+   ],
+   "gh": "Our games",
+   "soon": "More classic card games are coming soon.",
+   "bh": "Ready for a game?",
+   "badge": "Get it on Google Play",
+   "contact": "Contact",
+   "priv": "Privacy policy",
+   "t_i": "CardForgeStudio – Classic card games on Android",
+   "d_i": "CardForgeStudio, an independent studio making classic card games for mobile. Discover African Tarot on Google Play.",
+   "toc": "Contents"
+  },
+  "de": {
+   "nav": [
+    "Spiele",
+    "Regeln",
+    "Datenschutz"
+   ],
+   "h1": "Klassische Kartenspiele, neu gedacht für das Handy.",
+   "lead": "CardForgeStudio ist ein unabhängiges Studio, das traditionellen Kartenspielen neues Leben einhaucht: originalgetreue Regeln, eine sorgfältige Oberfläche, Partien mit einem Fingertipp.",
+   "b_rules": "Regeln lernen",
+   "sh": "Das Studio",
+   "sc": [
+    [
+     "Nur Kartenspiele",
+     "Tarot, Stichspiele und Ansagespiele: Wir konzentrieren uns auf klassische Kartenspiele."
+    ],
+    [
+     "Für Touch gemacht",
+     "Große Buttons und gut lesbare Karten auf jedem Bildschirm, vom Smartphone bis zum Tablet."
+    ],
+    [
+     "Ihre Regeln, Ihre Wahl",
+     "Jedes Spiel bietet einstellbare Varianten, damit Sie wie zu Hause spielen."
+    ],
+    [
+     "Eigenes Framework",
+     "Unsere Spiele basieren auf einem mit Godot entwickelten Kartenspiel-Framework: weitere Titel folgen."
+    ]
+   ],
+   "gh": "Unsere Spiele",
+   "soon": "Weitere klassische Kartenspiele folgen bald.",
+   "bh": "Bereit für eine Partie?",
+   "badge": "Jetzt bei Google Play",
+   "contact": "Kontakt",
+   "priv": "Datenschutzerklärung",
+   "t_i": "CardForgeStudio – Klassische Kartenspiele für Android",
+   "d_i": "CardForgeStudio, unabhängiges Studio für klassische Kartenspiele auf dem Handy. Entdecken Sie Tarot Africain bei Google Play.",
+   "toc": "Inhalt"
+  },
+  "es": {
+   "nav": [
+    "Juegos",
+    "Reglas",
+    "Privacidad"
+   ],
+   "h1": "Los grandes clásicos de las cartas, reinventados para el móvil.",
+   "lead": "CardForgeStudio es un estudio independiente que da una segunda vida a los juegos de cartas tradicionales: reglas fieles, interfaz cuidada y partidas que empiezan con un toque.",
+   "b_rules": "Aprender las reglas",
+   "sh": "El estudio",
+   "sc": [
+    [
+     "Solo cartas",
+     "Tarot, juegos de bazas y de apuestas: nos centramos en los juegos de cartas clásicos."
+    ],
+    [
+     "Pensado para el tacto",
+     "Botones grandes y cartas legibles en cualquier pantalla, del móvil a la tableta."
+    ],
+    [
+     "Tus reglas, tu elección",
+     "Cada juego ofrece variantes ajustables para jugar como en casa."
+    ],
+    [
+     "Framework propio",
+     "Nuestros juegos usan un framework de cartas desarrollado con Godot: llegarán más títulos."
+    ]
+   ],
+   "gh": "Nuestros juegos",
+   "soon": "Pronto llegarán más juegos de cartas clásicos.",
+   "bh": "¿Listo para jugar?",
+   "badge": "Disponible en Google Play",
+   "contact": "Contacto",
+   "priv": "Política de privacidad",
+   "t_i": "CardForgeStudio – Juegos de cartas clásicos en Android",
+   "d_i": "CardForgeStudio, estudio independiente de juegos de cartas clásicos para móvil. Descubre Tarot Africano en Google Play.",
+   "toc": "Índice"
+  },
+  "it": {
+   "nav": [
+    "Giochi",
+    "Regole",
+    "Privacy"
+   ],
+   "h1": "I grandi classici delle carte, reinventati per il cellulare.",
+   "lead": "CardForgeStudio è uno studio indipendente che dà nuova vita ai giochi di carte tradizionali: regole fedeli, interfaccia curata, partite che partono con un tocco.",
+   "b_rules": "Impara le regole",
+   "sh": "Lo studio",
+   "sc": [
+    [
+     "Solo carte",
+     "Tarocchi, giochi di prese e di puntate: ci concentriamo sui giochi di carte classici."
+    ],
+    [
+     "Pensato per il touch",
+     "Pulsanti grandi e carte leggibili su ogni schermo, dallo smartphone al tablet."
+    ],
+    [
+     "Le tue regole, la tua scelta",
+     "Ogni gioco offre varianti regolabili per giocare come a casa."
+    ],
+    [
+     "Framework proprio",
+     "I nostri giochi usano un framework di carte sviluppato con Godot: arriveranno altri titoli."
+    ]
+   ],
+   "gh": "I nostri giochi",
+   "soon": "Presto arriveranno altri giochi di carte classici.",
+   "bh": "Pronto a giocare?",
+   "badge": "Disponibile su Google Play",
+   "contact": "Contatti",
+   "priv": "Informativa sulla privacy",
+   "t_i": "CardForgeStudio – Giochi di carte classici su Android",
+   "d_i": "CardForgeStudio, studio indipendente di giochi di carte classici per cellulare. Scopri Tarot Africain su Google Play.",
+   "toc": "Indice"
+  }
+ }
+}

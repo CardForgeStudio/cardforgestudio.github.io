@@ -1,0 +1,963 @@
+{
+ "slug": "tarot-africain",
+ "order": 1,
+ "play": "https://play.google.com/store/apps/details?id=com.cardforgestudio.tarotafricain",
+ "hero": "partie",
+ "lang": {
+  "fr": {
+   "name": "Tarot Africain",
+   "tags": [
+    "Jeu de plis",
+    "3 à 5 joueurs",
+    "Android"
+   ],
+   "gp": "22 cartes, un pari à tenir : annoncez exactement le nombre de plis que vous allez remporter, ni plus, ni moins. Affrontez des bots, activez les variantes (mexicaine, à l'aveugle, double 20…) et tentez de rester le dernier en vie.",
+   "soon": "D'autres jeux de cartes classiques arrivent bientôt.",
+   "t_r": "Règles du Tarot Africain (Whist 22) – CardForgeStudio",
+   "d_r": "Règles du Tarot Africain : annonces, plis, Excuse, comptage des vies et variantes. Jouez sur Android. Aussi appelé Whist 22.",
+   "rt": "Règles du Tarot Africain",
+   "rl": "Un jeu de plis où l'on ne gagne pas en prenant le plus de plis, mais en prédisant juste. 22 cartes, 3 à 5 joueurs, des parties rapides.",
+   "fh": "À vous de jouer",
+   "fp": "Testez vos pronostics contre des bots.",
+   "gr": "Règles du jeu",
+   "bp": "Le Tarot Africain est disponible sur Google Play.",
+   "sections": [
+    {
+     "id": "cartes",
+     "title": "Les cartes",
+     "blocks": [
+      {
+       "p": "Le Tarot Africain se joue avec seulement 22 cartes : les 21 atouts, numérotés de 1 à 21, et l'Excuse. Il n'y a pas de couleurs : seule la valeur de la carte compte pour remporter le pli."
+      },
+      {
+       "table": {
+        "head": [
+         "Carte",
+         "Valeur"
+        ],
+        "rows": [
+         [
+          "Atouts 1 à 21",
+          "Leur propre numéro (21 = le plus fort, hors Excuse)"
+         ],
+         [
+          "L'Excuse",
+          "0 ou 22, au choix du joueur qui la joue"
+         ]
+        ]
+       }
+      },
+      {
+       "note": "Le 1, le 21 et l'Excuse sont traditionnellement les cartes les plus précieuses : jouez-les au bon moment et surveillez-les chez vos adversaires."
+      }
+     ]
+    },
+    {
+     "id": "but",
+     "title": "But du jeu",
+     "blocks": [
+      {
+       "p": "À chaque manche, vous annoncez le nombre de plis que vous pensez remporter. Votre objectif : en remporter <strong>exactement</strong> ce nombre. Réussir votre pari vous préserve ; le rater vous coûte des vies, d'autant plus que l'écart est grand."
+      },
+      {
+       "p": "La partie s'arrête dès qu'il ne reste qu'un seul joueur avec des vies. Vous pouvez aussi fixer un nombre de donnes limité."
+      }
+     ]
+    },
+    {
+     "id": "annonces",
+     "title": "Les annonces",
+     "blocks": [
+      {
+       "p": "Avant chaque manche, chaque joueur annonce à son tour un nombre de plis, entre 0 et 5. Impossible de passer."
+      },
+      {
+       "p": "Par défaut, le dernier à annoncer ne peut pas choisir le nombre qui rendrait la somme des annonces égale au nombre de plis : il y a donc toujours au moins un perdant."
+      },
+      {
+       "fig": {
+        "img": "bidding",
+        "cap": "Phase d'annonce : choisissez de 0 à 5 plis. Le pari interdit est grisé."
+       }
+      }
+     ]
+    },
+    {
+     "id": "deroulement",
+     "title": "Déroulement",
+     "blocks": [
+      {
+       "p": "À votre tour, jouez <strong>n'importe quelle carte</strong> de votre main : aucune obligation de fournir. Le pli est remporté par la carte la plus forte."
+      },
+      {
+       "p": "Le nombre de cartes distribuées diminue à chaque manche, comme un escalier, jusqu'à 1 carte par joueur (5 cartes à 4 joueurs, 6 à 3, 4 à 5)."
+      },
+      {
+       "fig": {
+        "img": "partie",
+        "cap": "Un pli en cours : « Pli : 0/1 » = 0 pli remporté sur 1 annoncé."
+       }
+      }
+     ]
+    },
+    {
+     "id": "excuse",
+     "title": "L'Excuse",
+     "blocks": [
+      {
+       "p": "En jouant l'Excuse, vous choisissez sur l'instant si elle vaut <strong>0</strong> (la plus faible) ou <strong>22</strong> (plus forte que le 21)."
+      },
+      {
+       "fig": {
+        "img": "excuse",
+        "cap": "Au moment de jouer l'Excuse, choisissez 0 ou 22."
+       }
+      }
+     ]
+    },
+    {
+     "id": "points",
+     "title": "Comptage des vies",
+     "blocks": [
+      {
+       "p": "Chaque joueur démarre avec un capital de vies fixé par l'objectif : <strong>14 vies</strong> pour « Du roi à l'as » (le décompte affiche Roi, Dame, Cavalier, Valet… jusqu'à l'As), ou 5, 10, 15, 20, 30 ou 50."
+      },
+      {
+       "p": "Le classement affiche les vies <em>restantes</em> après chaque manche. À 0, le joueur est éliminé."
+      }
+     ]
+    },
+    {
+     "id": "variantes",
+     "title": "Variantes",
+     "blocks": [
+      {
+       "p": "Tout se règle dans les Options du jeu :"
+      },
+      {
+       "table": {
+        "head": [
+         "Variante",
+         "Effet"
+        ],
+        "rows": [
+         [
+          "À la mexicaine (tarot mexicain)",
+          "Manche à 1 carte : la vôtre est cachée, celles des adversaires sont visibles."
+         ],
+         [
+          "À l'aveugle",
+          "Manche à 1 carte : aucune carte visible, pas même la vôtre."
+         ],
+         [
+          "Obligation de monter",
+          "Jouer une carte plus forte que celle du pli si possible (sauf l'Excuse)."
+         ],
+         [
+          "Double 20",
+          "Si le 20 et le 21 tombent dans le même pli, la carte la plus faible l'emporte."
+         ],
+         [
+          "Règle de l'Excuse",
+          "Changeante (0 ou 22), zéro d'office (perd toujours) ou super 22 (bat le 21)."
+         ],
+         [
+          "Excuse avant le dernier pli",
+          "Obligation de jouer l'Excuse avant le dernier pli."
+         ],
+         [
+          "Sans l'Excuse",
+          "Partie à 21 cartes."
+         ],
+         [
+          "Pari interdit",
+          "Active ou non l'interdiction faite au dernier joueur d'égaliser le total."
+         ],
+         [
+          "Objectif et donnes",
+          "Du roi à l'as ou 5 à 50 points ; partie illimitée ou de 1 à 50 donnes."
+         ],
+         [
+          "Sens et premier annonceur",
+          "Horaire ou anti-horaire ; premier annonceur au hasard, en dernier (facile) ou en premier (difficile)."
+         ]
+        ]
+       }
+      },
+      {
+       "fig": {
+        "img": "variante",
+        "cap": "Manche « à la mexicaine » : vous voyez les cartes des autres, pas la vôtre."
+       }
+      }
+     ]
+    }
+   ],
+   "aka": "Le Tarot Africain est aussi connu sous le nom de <strong>Whist 22</strong>. C'est un cousin de l'ascenseur (<em>Oh Hell</em> en anglais), joué avec les 22 atouts du tarot. La manche « à la mexicaine » est aussi appelée <strong>Tarot mexicain</strong>."
+  },
+  "en": {
+   "name": "African Tarot",
+   "tags": [
+    "Trick-taking",
+    "3 to 5 players",
+    "Android"
+   ],
+   "gp": "22 cards, one bet to keep: predict exactly how many tricks you will win, no more, no less. Face bots, switch on variants (Mexican, blind, double 20…) and be the last player standing.",
+   "soon": "More classic card games are coming soon.",
+   "t_r": "African Tarot rules (Whist 22) – CardForgeStudio",
+   "d_r": "African Tarot rules: bidding, tricks, the Excuse, lives scoring and variants. Play on Android. Also called Whist 22.",
+   "rt": "African Tarot rules",
+   "rl": "A trick-taking game where you win not by taking the most tricks, but by predicting correctly. 22 cards, 3 to 5 players, fast games.",
+   "fh": "Your turn to play",
+   "fp": "Test your predictions against bots.",
+   "gr": "Game rules",
+   "bp": "African Tarot is available on Google Play.",
+   "sections": [
+    {
+     "id": "cartes",
+     "title": "The cards",
+     "blocks": [
+      {
+       "p": "African Tarot uses only 22 cards: the 21 trumps, numbered 1 to 21, and the Excuse. There are no suits: only a card's value decides who wins the trick."
+      },
+      {
+       "table": {
+        "head": [
+         "Card",
+         "Value"
+        ],
+        "rows": [
+         [
+          "Trumps 1 to 21",
+          "Their own number (21 is the highest, apart from the Excuse)"
+         ],
+         [
+          "The Excuse",
+          "0 or 22, chosen by the player who plays it"
+         ]
+        ]
+       }
+      },
+      {
+       "note": "The 1, the 21 and the Excuse are traditionally the most precious cards: play them at the right moment and watch for them in your opponents' hands."
+      }
+     ]
+    },
+    {
+     "id": "but",
+     "title": "Objective",
+     "blocks": [
+      {
+       "p": "Each round, you bid how many tricks you expect to win. Your goal is to win <strong>exactly</strong> that many. A correct bet keeps you safe; a missed one costs lives, more the bigger the gap."
+      },
+      {
+       "p": "The game ends when only one player still has lives. You can also set a limited number of deals."
+      }
+     ]
+    },
+    {
+     "id": "annonces",
+     "title": "Bidding",
+     "blocks": [
+      {
+       "p": "Before each round, every player in turn bids a number of tricks from 0 to 5. Passing is not allowed."
+      },
+      {
+       "p": "By default, the last bidder cannot choose the number that would make all bids add up exactly to the number of tricks, so there is always at least one loser."
+      },
+      {
+       "fig": {
+        "img": "bidding",
+        "cap": "Bidding phase: pick from 0 to 5 tricks. The forbidden bid is greyed out."
+       }
+      }
+     ]
+    },
+    {
+     "id": "deroulement",
+     "title": "Gameplay",
+     "blocks": [
+      {
+       "p": "On your turn, play <strong>any card</strong> from your hand: you never have to follow suit. The highest card wins the trick."
+      },
+      {
+       "p": "The number of cards dealt drops each round, like a staircase, down to 1 card per player (5 cards with 4 players, 6 with 3, 4 with 5)."
+      },
+      {
+       "fig": {
+        "img": "partie",
+        "cap": "A trick in progress: “Tricks: 0/1” means 0 won out of 1 bid."
+       }
+      }
+     ]
+    },
+    {
+     "id": "excuse",
+     "title": "The Excuse",
+     "blocks": [
+      {
+       "p": "When you play the Excuse, you decide on the spot whether it is worth <strong>0</strong> (the lowest) or <strong>22</strong> (higher than the 21)."
+      },
+      {
+       "fig": {
+        "img": "excuse",
+        "cap": "When playing the Excuse, choose 0 or 22."
+       }
+      }
+     ]
+    },
+    {
+     "id": "points",
+     "title": "Lives and scoring",
+     "blocks": [
+      {
+       "p": "Each player starts with lives set by the objective: <strong>14 lives</strong> for “King to Ace” (the count shows King, Queen, Knight, Jack… down to Ace), or 5, 10, 15, 20, 30 or 50."
+      },
+      {
+       "p": "The ranking shows the lives <em>remaining</em> after each round. At 0, a player is eliminated."
+      }
+     ]
+    },
+    {
+     "id": "variantes",
+     "title": "Variants",
+     "blocks": [
+      {
+       "p": "Everything can be set in the game's Options:"
+      },
+      {
+       "table": {
+        "head": [
+         "Variant",
+         "Effect"
+        ],
+        "rows": [
+         [
+          "Mexican (Mexican Tarot)",
+          "1-card round: yours is hidden, your opponents' cards are visible."
+         ],
+         [
+          "Blind",
+          "1-card round: no card is visible, not even yours."
+         ],
+         [
+          "Must overtrump",
+          "Play a higher card than the trick's if you can (except the Excuse)."
+         ],
+         [
+          "Double 20",
+          "If the 20 and the 21 fall in the same trick, the lowest card wins."
+         ],
+         [
+          "Excuse rule",
+          "Changing (0 or 22), always zero (always loses) or super 22 (beats the 21)."
+         ],
+         [
+          "Excuse before last trick",
+          "You must play the Excuse before the last trick."
+         ],
+         [
+          "No Excuse",
+          "21-card game."
+         ],
+         [
+          "Forbidden bid",
+          "Turns on or off the ban on the last player making the total even."
+         ],
+         [
+          "Objective and deals",
+          "King to Ace or 5 to 50 points; unlimited game or 1 to 50 deals."
+         ],
+         [
+          "Direction and first bidder",
+          "Clockwise or counter-clockwise; first bidder random, last (easy) or first (hard)."
+         ]
+        ]
+       }
+      },
+      {
+       "fig": {
+        "img": "variante",
+        "cap": "“Mexican” round: you see the others' cards, not your own."
+       }
+      }
+     ]
+    }
+   ],
+   "aka": "African Tarot is also known as <strong>Whist 22</strong>. It is a cousin of Oh Hell, played with the 22 trumps of a tarot deck. The Mexican variant is also called <strong>Mexican Tarot</strong>."
+  },
+  "de": {
+   "name": "Tarot Africain",
+   "tags": [
+    "Stichspiel",
+    "3 bis 5 Spieler",
+    "Android"
+   ],
+   "gp": "22 Karten, eine Wette, die gehalten werden muss: Sagen Sie genau an, wie viele Stiche Sie gewinnen – nicht mehr, nicht weniger. Spielen Sie gegen Bots, aktivieren Sie Varianten (Mexikanisch, Blind, Doppel-20 …) und bleiben Sie als Letzter übrig.",
+   "soon": "Weitere klassische Kartenspiele folgen bald.",
+   "t_r": "Regeln von Tarot Africain (Whist 22) – CardForgeStudio",
+   "d_r": "Regeln von Tarot Africain: Ansagen, Stiche, Excuse, Leben und Varianten. Spielen Sie auf Android. Auch bekannt als Whist 22.",
+   "rt": "Regeln von Tarot Africain",
+   "rl": "Ein Stichspiel, bei dem man nicht gewinnt, wenn man die meisten Stiche macht, sondern wenn man richtig vorhersagt. 22 Karten, 3 bis 5 Spieler, schnelle Partien.",
+   "fh": "Sie sind dran",
+   "fp": "Testen Sie Ihre Vorhersagen gegen Bots.",
+   "gr": "Spielregeln",
+   "bp": "Tarot Africain ist bei Google Play erhältlich.",
+   "sections": [
+    {
+     "id": "cartes",
+     "title": "Die Karten",
+     "blocks": [
+      {
+       "p": "Tarot Africain wird mit nur 22 Karten gespielt: den 21 Trümpfen (1 bis 21) und der Excuse. Es gibt keine Farben: Nur der Wert der Karte entscheidet über den Stich."
+      },
+      {
+       "table": {
+        "head": [
+         "Karte",
+         "Wert"
+        ],
+        "rows": [
+         [
+          "Trümpfe 1 bis 21",
+          "Ihre eigene Zahl (21 ist die höchste, außer der Excuse)"
+         ],
+         [
+          "Die Excuse",
+          "0 oder 22, nach Wahl des Spielers, der sie ausspielt"
+         ]
+        ]
+       }
+      },
+      {
+       "note": "Die 1, die 21 und die Excuse gelten traditionell als die wertvollsten Karten: Spielen Sie sie im richtigen Moment und behalten Sie sie bei den Gegnern im Blick."
+      }
+     ]
+    },
+    {
+     "id": "but",
+     "title": "Spielziel",
+     "blocks": [
+      {
+       "p": "In jeder Runde sagen Sie an, wie viele Stiche Sie erwarten. Ihr Ziel: <strong>genau</strong> so viele zu gewinnen. Eine richtige Ansage schützt Sie; eine falsche kostet Leben, umso mehr, je größer die Abweichung."
+      },
+      {
+       "p": "Das Spiel endet, sobald nur noch ein Spieler Leben hat. Sie können auch eine begrenzte Anzahl an Runden festlegen."
+      }
+     ]
+    },
+    {
+     "id": "annonces",
+     "title": "Die Ansagen",
+     "blocks": [
+      {
+       "p": "Vor jeder Runde sagt jeder Spieler der Reihe nach eine Stichzahl von 0 bis 5 an. Passen ist nicht erlaubt."
+      },
+      {
+       "p": "Standardmäßig darf der letzte Ansager nicht die Zahl wählen, bei der die Summe aller Ansagen genau der Stichzahl entspricht: So gibt es immer mindestens einen Verlierer."
+      },
+      {
+       "fig": {
+        "img": "bidding",
+        "cap": "Ansage: Wählen Sie 0 bis 5 Stiche. Die verbotene Ansage ist ausgegraut."
+       }
+      }
+     ]
+    },
+    {
+     "id": "deroulement",
+     "title": "Spielablauf",
+     "blocks": [
+      {
+       "p": "Spielen Sie, wenn Sie dran sind, <strong>eine beliebige Karte</strong> aus der Hand: Es gibt keinen Bedienzwang. Die höchste Karte gewinnt den Stich."
+      },
+      {
+       "p": "Die Zahl der ausgeteilten Karten sinkt von Runde zu Runde wie eine Treppe bis auf 1 Karte pro Spieler (5 Karten bei 4 Spielern, 6 bei 3, 4 bei 5)."
+      },
+      {
+       "fig": {
+        "img": "partie",
+        "cap": "Ein laufender Stich: „Stiche: 0/1“ heißt 0 gewonnen von 1 angesagt."
+       }
+      }
+     ]
+    },
+    {
+     "id": "excuse",
+     "title": "Die Excuse",
+     "blocks": [
+      {
+       "p": "Beim Ausspielen der Excuse entscheiden Sie sofort, ob sie <strong>0</strong> (die niedrigste) oder <strong>22</strong> (höher als die 21) zählt."
+      },
+      {
+       "fig": {
+        "img": "excuse",
+        "cap": "Beim Ausspielen der Excuse wählen Sie 0 oder 22."
+       }
+      }
+     ]
+    },
+    {
+     "id": "points",
+     "title": "Leben und Wertung",
+     "blocks": [
+      {
+       "p": "Jeder Spieler beginnt mit Leben, die das Ziel festlegt: <strong>14 Leben</strong> bei „Vom König zum As“ (die Anzeige zeigt König, Dame, Cavall, Bube … bis zum As) oder 5, 10, 15, 20, 30 bzw. 50."
+      },
+      {
+       "p": "Die Rangliste zeigt die <em>verbleibenden</em> Leben nach jeder Runde. Bei 0 scheidet der Spieler aus."
+      }
+     ]
+    },
+    {
+     "id": "variantes",
+     "title": "Varianten",
+     "blocks": [
+      {
+       "p": "Alles lässt sich in den Optionen des Spiels einstellen:"
+      },
+      {
+       "table": {
+        "head": [
+         "Variante",
+         "Wirkung"
+        ],
+        "rows": [
+         [
+          "Mexikanisch (Mexikanisches Tarot)",
+          "Runde mit 1 Karte: Ihre ist verdeckt, die der Gegner sind sichtbar."
+         ],
+         [
+          "Blind",
+          "Runde mit 1 Karte: keine Karte sichtbar, auch nicht Ihre."
+         ],
+         [
+          "Übertrumpfzwang",
+          "Wenn möglich eine höhere Karte als die im Stich spielen (außer der Excuse)."
+         ],
+         [
+          "Doppel-20",
+          "Fallen 20 und 21 in denselben Stich, gewinnt die niedrigste Karte."
+         ],
+         [
+          "Excuse-Regel",
+          "Wechselnd (0 oder 22), immer null (verliert immer) oder Super 22 (schlägt die 21)."
+         ],
+         [
+          "Excuse vor dem letzten Stich",
+          "Die Excuse muss vor dem letzten Stich gespielt werden."
+         ],
+         [
+          "Ohne Excuse",
+          "Partie mit 21 Karten."
+         ],
+         [
+          "Verbotene Ansage",
+          "Schaltet das Verbot für den letzten Spieler, die Summe auszugleichen, ein oder aus."
+         ],
+         [
+          "Ziel und Runden",
+          "Vom König zum As oder 5 bis 50 Punkte; unbegrenzt oder 1 bis 50 Runden."
+         ],
+         [
+          "Richtung und erster Ansager",
+          "Im oder gegen den Uhrzeigersinn; erster Ansager zufällig, zuletzt (leicht) oder zuerst (schwer)."
+         ]
+        ]
+       }
+      },
+      {
+       "fig": {
+        "img": "variante",
+        "cap": "Runde „Mexikanisch“: Sie sehen die Karten der anderen, nicht Ihre eigene."
+       }
+      }
+     ]
+    }
+   ],
+   "aka": "Tarot Africain ist auch als <strong>Whist 22</strong> bekannt. Es ist mit dem Ansagespiel „Oh Hell“ verwandt und wird mit den 22 Trümpfen des Tarots gespielt. Die Variante „Mexikanisch“ heißt auch <strong>Mexikanisches Tarot</strong>."
+  },
+  "es": {
+   "name": "Tarot Africano",
+   "tags": [
+    "Juego de bazas",
+    "3 a 5 jugadores",
+    "Android"
+   ],
+   "gp": "22 cartas y una apuesta que cumplir: anuncia exactamente cuántas bazas vas a ganar, ni más ni menos. Juega contra bots, activa las variantes (a la mexicana, a ciegas, doble 20…) y sé el último en pie.",
+   "soon": "Pronto llegarán más juegos de cartas clásicos.",
+   "t_r": "Reglas del Tarot Africano (Whist 22) – CardForgeStudio",
+   "d_r": "Reglas del Tarot Africano: apuestas, bazas, Excusa, vidas y variantes. Juega en Android. También llamado Whist 22.",
+   "rt": "Reglas del Tarot Africano",
+   "rl": "Un juego de bazas en el que no gana quien más bazas hace, sino quien mejor predice. 22 cartas, 3 a 5 jugadores, partidas rápidas.",
+   "fh": "Te toca jugar",
+   "fp": "Pon a prueba tus pronósticos contra bots.",
+   "gr": "Reglas del juego",
+   "bp": "Tarot Africano está disponible en Google Play.",
+   "sections": [
+    {
+     "id": "cartes",
+     "title": "Las cartas",
+     "blocks": [
+      {
+       "p": "El Tarot Africano se juega con solo 22 cartas: los 21 triunfos, numerados del 1 al 21, y la Excusa. No hay palos: solo el valor de la carta decide quién gana la baza."
+      },
+      {
+       "table": {
+        "head": [
+         "Carta",
+         "Valor"
+        ],
+        "rows": [
+         [
+          "Triunfos 1 a 21",
+          "Su propio número (el 21 es el más alto, salvo la Excusa)"
+         ],
+         [
+          "La Excusa",
+          "0 o 22, a elección del jugador que la juega"
+         ]
+        ]
+       }
+      },
+      {
+       "note": "El 1, el 21 y la Excusa son tradicionalmente las cartas más valiosas: juégalas en el momento justo y vigílalas en manos rivales."
+      }
+     ]
+    },
+    {
+     "id": "but",
+     "title": "Objetivo",
+     "blocks": [
+      {
+       "p": "En cada ronda anuncias cuántas bazas crees ganar. Tu objetivo: ganar <strong>exactamente</strong> ese número. Acertar te protege; fallar te cuesta vidas, tantas más cuanto mayor sea la diferencia."
+      },
+      {
+       "p": "La partida termina cuando solo queda un jugador con vidas. También puedes fijar un número limitado de manos."
+      }
+     ]
+    },
+    {
+     "id": "annonces",
+     "title": "Las apuestas",
+     "blocks": [
+      {
+       "p": "Antes de cada ronda, cada jugador anuncia por turno un número de bazas de 0 a 5. No se puede pasar."
+      },
+      {
+       "p": "Por defecto, el último en anunciar no puede elegir el número que haga que la suma de las apuestas sea igual al número de bazas: siempre hay al menos un perdedor."
+      },
+      {
+       "fig": {
+        "img": "bidding",
+        "cap": "Fase de apuestas: elige de 0 a 5 bazas. La apuesta prohibida aparece atenuada."
+       }
+      }
+     ]
+    },
+    {
+     "id": "deroulement",
+     "title": "Desarrollo",
+     "blocks": [
+      {
+       "p": "En tu turno, juega <strong>cualquier carta</strong> de tu mano: no hay obligación de asistir. La carta más alta gana la baza."
+      },
+      {
+       "p": "El número de cartas repartidas baja en cada ronda, como una escalera, hasta 1 carta por jugador (5 cartas con 4 jugadores, 6 con 3, 4 con 5)."
+      },
+      {
+       "fig": {
+        "img": "partie",
+        "cap": "Una baza en curso: «Bazas: 0/1» significa 0 ganadas de 1 apostada."
+       }
+      }
+     ]
+    },
+    {
+     "id": "excuse",
+     "title": "La Excusa",
+     "blocks": [
+      {
+       "p": "Al jugar la Excusa, decides en el acto si vale <strong>0</strong> (la más baja) o <strong>22</strong> (más alta que el 21)."
+      },
+      {
+       "fig": {
+        "img": "excuse",
+        "cap": "Al jugar la Excusa, elige 0 o 22."
+       }
+      }
+     ]
+    },
+    {
+     "id": "points",
+     "title": "Vidas y puntuación",
+     "blocks": [
+      {
+       "p": "Cada jugador empieza con las vidas que fija el objetivo: <strong>14 vidas</strong> en «Del rey al as» (el marcador muestra Rey, Dama, Caballo, Sota… hasta el As), o 5, 10, 15, 20, 30 o 50."
+      },
+      {
+       "p": "La clasificación muestra las vidas <em>restantes</em> tras cada ronda. Con 0, el jugador queda eliminado."
+      }
+     ]
+    },
+    {
+     "id": "variantes",
+     "title": "Variantes",
+     "blocks": [
+      {
+       "p": "Todo se ajusta en las Opciones del juego:"
+      },
+      {
+       "table": {
+        "head": [
+         "Variante",
+         "Efecto"
+        ],
+        "rows": [
+         [
+          "A la mexicana (tarot mexicano)",
+          "Ronda de 1 carta: la tuya está oculta, las de los rivales son visibles."
+         ],
+         [
+          "A ciegas",
+          "Ronda de 1 carta: ninguna carta es visible, ni siquiera la tuya."
+         ],
+         [
+          "Obligación de subir",
+          "Jugar una carta más alta que la de la baza si es posible (salvo la Excusa)."
+         ],
+         [
+          "Doble 20",
+          "Si el 20 y el 21 caen en la misma baza, gana la carta más baja."
+         ],
+         [
+          "Regla de la Excusa",
+          "Cambiante (0 o 22), cero de oficio (siempre pierde) o súper 22 (gana al 21)."
+         ],
+         [
+          "Excusa antes de la última baza",
+          "Hay que jugar la Excusa antes de la última baza."
+         ],
+         [
+          "Sin la Excusa",
+          "Partida de 21 cartas."
+         ],
+         [
+          "Apuesta prohibida",
+          "Activa o desactiva la prohibición al último jugador de igualar el total."
+         ],
+         [
+          "Objetivo y manos",
+          "Del rey al as o de 5 a 50 puntos; partida ilimitada o de 1 a 50 manos."
+         ],
+         [
+          "Sentido y primer apostante",
+          "Horario o antihorario; primero al azar, el último (fácil) o el primero (difícil)."
+         ]
+        ]
+       }
+      },
+      {
+       "fig": {
+        "img": "variante",
+        "cap": "Ronda «a la mexicana»: ves las cartas de los demás, no la tuya."
+       }
+      }
+     ]
+    }
+   ],
+   "aka": "El Tarot Africano también se conoce como <strong>Whist 22</strong>. Es primo del «Oh Hell» y se juega con los 22 triunfos del tarot. La variante a la mexicana se conoce también como <strong>Tarot mexicano</strong>."
+  },
+  "it": {
+   "name": "Tarot Africain",
+   "tags": [
+    "Gioco di prese",
+    "3-5 giocatori",
+    "Android"
+   ],
+   "gp": "22 carte e una scommessa da mantenere: annuncia esattamente quante prese farai, né più né meno. Sfida i bot, attiva le varianti (alla messicana, alla cieca, doppio 20…) e resta l'ultimo in gioco.",
+   "soon": "Presto arriveranno altri giochi di carte classici.",
+   "t_r": "Regole del Tarot Africain (Whist 22) – CardForgeStudio",
+   "d_r": "Regole del Tarot Africain: puntate, prese, Excuse, vite e varianti. Gioca su Android. Detto anche Whist 22.",
+   "rt": "Regole del Tarot Africain",
+   "rl": "Un gioco di prese in cui non vince chi fa più prese, ma chi prevede meglio. 22 carte, 3-5 giocatori, partite veloci.",
+   "fh": "Tocca a te",
+   "fp": "Metti alla prova i tuoi pronostici contro i bot.",
+   "gr": "Regole del gioco",
+   "bp": "Tarot Africain è disponibile su Google Play.",
+   "sections": [
+    {
+     "id": "cartes",
+     "title": "Le carte",
+     "blocks": [
+      {
+       "p": "Il Tarot Africain si gioca con sole 22 carte: i 21 trionfi, numerati da 1 a 21, e l'Excuse. Non ci sono semi: conta solo il valore della carta per vincere la presa."
+      },
+      {
+       "table": {
+        "head": [
+         "Carta",
+         "Valore"
+        ],
+        "rows": [
+         [
+          "Trionfi da 1 a 21",
+          "Il proprio numero (21 è il più alto, escluso l'Excuse)"
+         ],
+         [
+          "L'Excuse",
+          "0 o 22, a scelta di chi la gioca"
+         ]
+        ]
+       }
+      },
+      {
+       "note": "L'1, il 21 e l'Excuse sono tradizionalmente le carte più preziose: giocale al momento giusto e tienile d'occhio negli avversari."
+      }
+     ]
+    },
+    {
+     "id": "but",
+     "title": "Obiettivo",
+     "blocks": [
+      {
+       "p": "A ogni mano annunci quante prese pensi di fare. Il tuo obiettivo: farne <strong>esattamente</strong> quel numero. Una puntata riuscita ti salva; una sbagliata costa vite, tanto più quanto è grande lo scarto."
+      },
+      {
+       "p": "La partita finisce quando resta un solo giocatore con delle vite. Puoi anche fissare un numero limitato di mani."
+      }
+     ]
+    },
+    {
+     "id": "annonces",
+     "title": "Le puntate",
+     "blocks": [
+      {
+       "p": "Prima di ogni mano, ogni giocatore annuncia a turno un numero di prese da 0 a 5. Non si può passare."
+      },
+      {
+       "p": "Di default l'ultimo a puntare non può scegliere il numero che renderebbe la somma delle puntate pari al numero di prese: c'è sempre almeno un perdente."
+      },
+      {
+       "fig": {
+        "img": "bidding",
+        "cap": "Fase di puntata: scegli da 0 a 5 prese. La puntata vietata è disattivata."
+       }
+      }
+     ]
+    },
+    {
+     "id": "deroulement",
+     "title": "Svolgimento",
+     "blocks": [
+      {
+       "p": "Al tuo turno gioca <strong>una carta qualsiasi</strong> della tua mano: nessun obbligo di rispondere al seme. La carta più alta vince la presa."
+      },
+      {
+       "p": "Il numero di carte distribuite scende a ogni mano, come una scala, fino a 1 carta per giocatore (5 carte con 4 giocatori, 6 con 3, 4 con 5)."
+      },
+      {
+       "fig": {
+        "img": "partie",
+        "cap": "Una presa in corso: «Prese: 0/1» significa 0 vinte su 1 annunciata."
+       }
+      }
+     ]
+    },
+    {
+     "id": "excuse",
+     "title": "L'Excuse",
+     "blocks": [
+      {
+       "p": "Giocando l'Excuse, scegli sul momento se vale <strong>0</strong> (la più bassa) o <strong>22</strong> (più alta del 21)."
+      },
+      {
+       "fig": {
+        "img": "excuse",
+        "cap": "Quando giochi l'Excuse, scegli 0 o 22."
+       }
+      }
+     ]
+    },
+    {
+     "id": "points",
+     "title": "Vite e punteggio",
+     "blocks": [
+      {
+       "p": "Ogni giocatore parte con le vite stabilite dall'obiettivo: <strong>14 vite</strong> per «Dal re all'asso» (il conteggio mostra Re, Dama, Cavallo, Fante… fino all'Asso), oppure 5, 10, 15, 20, 30 o 50."
+      },
+      {
+       "p": "La classifica mostra le vite <em>rimaste</em> dopo ogni mano. A 0 il giocatore è eliminato."
+      }
+     ]
+    },
+    {
+     "id": "variantes",
+     "title": "Varianti",
+     "blocks": [
+      {
+       "p": "Tutto si regola nelle Opzioni del gioco:"
+      },
+      {
+       "table": {
+        "head": [
+         "Variante",
+         "Effetto"
+        ],
+        "rows": [
+         [
+          "Alla messicana (tarot messicano)",
+          "Mano da 1 carta: la tua è nascosta, quelle degli avversari sono visibili."
+         ],
+         [
+          "Alla cieca",
+          "Mano da 1 carta: nessuna carta visibile, nemmeno la tua."
+         ],
+         [
+          "Obbligo di salire",
+          "Giocare una carta più alta di quella della presa, se possibile (esclusa l'Excuse)."
+         ],
+         [
+          "Doppio 20",
+          "Se il 20 e il 21 cadono nella stessa presa, vince la carta più bassa."
+         ],
+         [
+          "Regola dell'Excuse",
+          "Variabile (0 o 22), zero d'ufficio (perde sempre) o super 22 (batte il 21)."
+         ],
+         [
+          "Excuse prima dell'ultima presa",
+          "L'Excuse va giocata prima dell'ultima presa."
+         ],
+         [
+          "Senza Excuse",
+          "Partita a 21 carte."
+         ],
+         [
+          "Puntata vietata",
+          "Attiva o disattiva il divieto per l'ultimo giocatore di pareggiare il totale."
+         ],
+         [
+          "Obiettivo e mani",
+          "Dal re all'asso o da 5 a 50 punti; partita illimitata o da 1 a 50 mani."
+         ],
+         [
+          "Senso e primo a puntare",
+          "Orario o antiorario; primo a caso, ultimo (facile) o primo (difficile)."
+         ]
+        ]
+       }
+      },
+      {
+       "fig": {
+        "img": "variante",
+        "cap": "Mano «alla messicana»: vedi le carte degli altri, non la tua."
+       }
+      }
+     ]
+    }
+   ],
+   "aka": "Il Tarot Africain è noto anche come <strong>Whist 22</strong>. È un cugino dell'«Oh Hell» e si gioca con i 22 trionfi dei tarocchi. La variante alla messicana è detta anche <strong>Tarot messicano</strong>."
+  }
+ }
+}
